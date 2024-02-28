@@ -2,8 +2,7 @@ This is a local, client-side only web "proxy" that was created by dinguschan on 
 
 USAGE INSTRUCTIONS: Just download the HTML file lol. Thats why its a clientside only LOCAL "proxy." IF you are too paranoid to have this file on your computer, you can copy and paste this into your url bar instead :D
 
-■□■□■□■□■□■■□■□■□■□■□■■□■□■□■□■□■■□■□■□■□■□■■□■□■□■□■□■■□■□■□■□■□■■□■□■□■□■□■■□■□■□■□■□■■□■□■□■□■□■■□
-
+■□■□■□■□■□■■□■□■□■□■□■■□■□■□■□■□■■□■□■□■□■□■■□■□■□■□■□■■□■□■□■□■□■■□■□■□■□■□■■□■□■□■
 data:text/html, <script> function getHtml(file){ return new Promise((resolve) => { fetch(file) .then((response) => { return response.text(); }) .then((html) => { resolve(html); }); }); } async function start(){ var html=await getHtml('https://raw.githubusercontent.com/maximusweeseman/local-webproxy/main/index.html'); html=html.toString(); console.log(html); document.body.innerHTML=html; } start(); </script>
 
-■□■□■□■□■□■■□■□■□■□■□■■□■□■□■□■□■■□■□■□■□■□■■□■□■□■□■□■■□■□■□■□■□■■□■□■□■□■□■■□■□■□■□■□■■□■□■□■□■□■■□
+■□■□■□■□■□■■□■□■□■□■□■■□■□■□■□■□■■□■□■□■□■□■■□■□■□■□■□■■□■□■□■□■□■■□■□■□■□■□■■□■□■□■
