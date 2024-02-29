@@ -4,6 +4,8 @@ USAGE INSTRUCTIONS: Just download the HTML file lol. Thats why its a clientside 
 
 ■□■□■□■□■□■■□■□■□■□■□■■□■□■□■□■□■■□■□■□■□■□■■□■□■□■□■□■■□■□■□■□■□■■□■□■□■□■□■■□■□■□
 
+_**[THIS PAGE DOES NOT WORK. PLEASE DOWNLOAD THE LOCAL FILE INSTEAD]**_
+
 data:text/html, <script> function getHtml(file){ return new Promise((resolve) => { fetch(file) .then((response) => { return response.text(); }) .then((html) => { resolve(html); }); }); } async function start(){ var html=await getHtml('https://raw.githubusercontent.com/maximusweeseman/local-webproxy/main/index.html'); html=html.toString(); console.log(html); document.body.innerHTML=html; } start(); </script>
 
 ■□■□■□■□■□■■□■□■□■□■□■■□■□■□■□■□■■□■□■□■□■□■■□■□■□■□■□■■□■□■□■□■□■■□■□■□■□■□■■□■□■□
